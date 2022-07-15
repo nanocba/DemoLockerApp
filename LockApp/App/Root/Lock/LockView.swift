@@ -1,4 +1,5 @@
 import ComposableArchitecture
+import OrderedCollections
 import SwiftUI
 
 struct LockView: View {
@@ -8,7 +9,7 @@ struct LockView: View {
         WithViewStore(store.scope(state: \.view).actionless) { viewStore in
             VStack {
                 ForEachStore(store.scope(state: \.digits, action: LockAction.digitView)) {
-                    CounterView(store: $0.scope(state: \.state))
+                    CounterView(store: $0)
                 }
 
                 Text("Unlocked!")

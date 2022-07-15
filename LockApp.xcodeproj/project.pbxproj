@@ -31,6 +31,7 @@
 		FA91EEC42880E7A100423F1F /* IdentifiableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEC32880E7A100423F1F /* IdentifiableState.swift */; };
 		FA91EEC62880E7C000423F1F /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEC52880E7C000423F1F /* Reducer.swift */; };
 		FA91EEC82880ED2500423F1F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEC72880ED2500423F1F /* View.swift */; };
+		FA91EECA2881063100423F1F /* ForEachStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEC92881063100423F1F /* ForEachStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		FA91EEC32880E7A100423F1F /* IdentifiableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableState.swift; sourceTree = "<group>"; };
 		FA91EEC52880E7C000423F1F /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		FA91EEC72880ED2500423F1F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		FA91EEC92881063100423F1F /* ForEachStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +243,9 @@
 		FA91EEB82880AFAF00423F1F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FA91EEB92880AFB900423F1F /* Store.swift */,
+				FA91EEC92881063100423F1F /* ForEachStore.swift */,
 				FA91EEC52880E7C000423F1F /* Reducer.swift */,
+				FA91EEB92880AFB900423F1F /* Store.swift */,
 				FA91EEC72880ED2500423F1F /* View.swift */,
 			);
 			path = Extensions;
@@ -401,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA91EECA2881063100423F1F /* ForEachStore.swift in Sources */,
 				FA91EEBC2880B13C00423F1F /* CounterDetailView.swift in Sources */,
 				FA91EEBE2880B7D000423F1F /* LockCore.swift in Sources */,
 				FA91EEAD2880A7A300423F1F /* CounterCore.swift in Sources */,
