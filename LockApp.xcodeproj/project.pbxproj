@@ -21,8 +21,6 @@
 		FA91EEA92880A64600423F1F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEA82880A64600423F1F /* RootView.swift */; };
 		FA91EEAD2880A7A300423F1F /* CounterCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEAC2880A7A300423F1F /* CounterCore.swift */; };
 		FA91EEAF2880A7A900423F1F /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEAE2880A7A900423F1F /* CounterView.swift */; };
-		FA91EEB32880A88300423F1F /* CounterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEB22880A88300423F1F /* CounterClient.swift */; };
-		FA91EEB52880A97900423F1F /* CounterClientLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEB42880A97900423F1F /* CounterClientLive.swift */; };
 		FA91EEB72880AA5B00423F1F /* AppEnvironmentLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEB62880AA5B00423F1F /* AppEnvironmentLive.swift */; };
 		FA91EEBA2880AFB900423F1F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEB92880AFB900423F1F /* Store.swift */; };
 		FA91EEBC2880B13C00423F1F /* CounterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEBB2880B13C00423F1F /* CounterDetailView.swift */; };
@@ -68,8 +66,6 @@
 		FA91EEA82880A64600423F1F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		FA91EEAC2880A7A300423F1F /* CounterCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCore.swift; sourceTree = "<group>"; };
 		FA91EEAE2880A7A900423F1F /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
-		FA91EEB22880A88300423F1F /* CounterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClient.swift; sourceTree = "<group>"; };
-		FA91EEB42880A97900423F1F /* CounterClientLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClientLive.swift; sourceTree = "<group>"; };
 		FA91EEB62880AA5B00423F1F /* AppEnvironmentLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironmentLive.swift; sourceTree = "<group>"; };
 		FA91EEB92880AFB900423F1F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		FA91EEBB2880B13C00423F1F /* CounterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDetailView.swift; sourceTree = "<group>"; };
@@ -133,7 +129,6 @@
 				FA91EE6F2880A0F700423F1F /* LockAppApp.swift */,
 				FA91EE9C2880A24900423F1F /* App */,
 				FA91EEAA2880A77C00423F1F /* Components */,
-				FA91EEB02880A85B00423F1F /* Dependencies */,
 				FA91EEC12880E78100423F1F /* Support */,
 				FA91EE732880A0FC00423F1F /* Assets.xcassets */,
 				FA91EE752880A0FC00423F1F /* Preview Content */,
@@ -221,23 +216,6 @@
 				FA91EEAE2880A7A900423F1F /* CounterView.swift */,
 			);
 			path = Counter;
-			sourceTree = "<group>";
-		};
-		FA91EEB02880A85B00423F1F /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				FA91EEB12880A87600423F1F /* CounterClient */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		FA91EEB12880A87600423F1F /* CounterClient */ = {
-			isa = PBXGroup;
-			children = (
-				FA91EEB22880A88300423F1F /* CounterClient.swift */,
-				FA91EEB42880A97900423F1F /* CounterClientLive.swift */,
-			);
-			path = CounterClient;
 			sourceTree = "<group>";
 		};
 		FA91EEB82880AFAF00423F1F /* Extensions */ = {
@@ -421,8 +399,6 @@
 				FA91EEB72880AA5B00423F1F /* AppEnvironmentLive.swift in Sources */,
 				FA91EEC82880ED2500423F1F /* View.swift in Sources */,
 				FA91EEAF2880A7A900423F1F /* CounterView.swift in Sources */,
-				FA91EEB32880A88300423F1F /* CounterClient.swift in Sources */,
-				FA91EEB52880A97900423F1F /* CounterClientLive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
