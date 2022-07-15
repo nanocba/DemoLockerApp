@@ -30,6 +30,8 @@
 		FA91EEC62880E7C000423F1F /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEC52880E7C000423F1F /* Reducer.swift */; };
 		FA91EEC82880ED2500423F1F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEC72880ED2500423F1F /* View.swift */; };
 		FA91EECA2881063100423F1F /* ForEachStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEC92881063100423F1F /* ForEachStore.swift */; };
+		FA91EEDB2881838000423F1F /* CounterClientLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EED92881838000423F1F /* CounterClientLive.swift */; };
+		FA91EEDC2881838000423F1F /* CounterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEDA2881838000423F1F /* CounterClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		FA91EEC52880E7C000423F1F /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		FA91EEC72880ED2500423F1F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		FA91EEC92881063100423F1F /* ForEachStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachStore.swift; sourceTree = "<group>"; };
+		FA91EED92881838000423F1F /* CounterClientLive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterClientLive.swift; sourceTree = "<group>"; };
+		FA91EEDA2881838000423F1F /* CounterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 				FA91EE6F2880A0F700423F1F /* LockAppApp.swift */,
 				FA91EE9C2880A24900423F1F /* App */,
 				FA91EEAA2880A77C00423F1F /* Components */,
+				FA91EED72881834900423F1F /* Environment */,
 				FA91EEC12880E78100423F1F /* Support */,
 				FA91EE732880A0FC00423F1F /* Assets.xcassets */,
 				FA91EE752880A0FC00423F1F /* Preview Content */,
@@ -244,6 +249,23 @@
 				FA91EEC32880E7A100423F1F /* IdentifiableState.swift */,
 			);
 			path = Types;
+			sourceTree = "<group>";
+		};
+		FA91EED72881834900423F1F /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				FA91EED82881837000423F1F /* CounterClient */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		FA91EED82881837000423F1F /* CounterClient */ = {
+			isa = PBXGroup;
+			children = (
+				FA91EEDA2881838000423F1F /* CounterClient.swift */,
+				FA91EED92881838000423F1F /* CounterClientLive.swift */,
+			);
+			path = CounterClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +411,8 @@
 				FA91EEC42880E7A100423F1F /* IdentifiableState.swift in Sources */,
 				FA91EEA22880A28700423F1F /* AppView.swift in Sources */,
 				FA91EEA02880A27F00423F1F /* AppCore.swift in Sources */,
+				FA91EEDB2881838000423F1F /* CounterClientLive.swift in Sources */,
+				FA91EEDC2881838000423F1F /* CounterClient.swift in Sources */,
 				FA91EEBA2880AFB900423F1F /* Store.swift in Sources */,
 				FA91EEA92880A64600423F1F /* RootView.swift in Sources */,
 				FA91EEA72880A34700423F1F /* CounterDetailCore.swift in Sources */,
