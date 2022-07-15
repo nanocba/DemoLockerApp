@@ -132,8 +132,8 @@
 			children = (
 				FA91EE6F2880A0F700423F1F /* LockAppApp.swift */,
 				FA91EE9C2880A24900423F1F /* App */,
-				FA91EEB02880A85B00423F1F /* Dependencies */,
 				FA91EEAA2880A77C00423F1F /* Components */,
+				FA91EEB02880A85B00423F1F /* Dependencies */,
 				FA91EEC12880E78100423F1F /* Support */,
 				FA91EE732880A0FC00423F1F /* Assets.xcassets */,
 				FA91EE752880A0FC00423F1F /* Preview Content */,
