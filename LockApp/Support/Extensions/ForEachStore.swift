@@ -9,7 +9,7 @@ extension ForEachStore {
     )
     where
         State: Equatable,
-        EachState == IdentifiableState<State>,
+        EachState == IdentifiableState<ID, State>,
         EachContent: View,
         Data == IdentifiedArray<ID, EachState>,
         Content == WithViewStore<

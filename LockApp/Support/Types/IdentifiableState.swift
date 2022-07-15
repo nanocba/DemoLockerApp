@@ -1,8 +1,8 @@
 import Foundation
 
 @dynamicMemberLookup
-struct IdentifiableState<State: Equatable>: Equatable, Identifiable {
-    let id: UUID
+struct IdentifiableState<ID: Hashable, State: Equatable>: Equatable, Identifiable {
+    let id: ID
     var state: State
 
     subscript<StateProperty>(dynamicMember keyPath: KeyPath<State, StateProperty>) -> StateProperty {

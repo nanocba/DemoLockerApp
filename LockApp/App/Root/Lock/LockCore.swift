@@ -23,7 +23,7 @@ enum LockAction: Equatable {
 // MARK: - Reducer
 
 let lockReducer: Reducer<LockState, LockAction, LockEnvironment> = .combine(
-    counterReducer.identifiable.forEach(
+    counterReducer.identifiable().forEach(
         state: \.digits,
         action: /LockAction.digitView,
         environment: \.counter
@@ -49,7 +49,7 @@ struct LockEnvironment {
 
 // MARK: - Support
 
-typealias DigitState = IdentifiableState<CounterState>
+typealias DigitState = IdentifiableState<UUID, CounterState>
 
 fileprivate extension DigitState {
     static var lockDigit: Self { .init(id: UUID(), state: .init(value: 0, min: 0, max: 9)) }
