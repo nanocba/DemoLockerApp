@@ -1,5 +1,7 @@
 import Foundation
 
+/// The ``IdentifiableState`` type wraps a ``State`` adding ``Identifiable`` conformance. This is useful when the base type may not always need to satisfy this requirement.
+/// By adding ``@dynamicMemberLookup`` attribute we are letting developers access wrapped state properties directly.
 @dynamicMemberLookup
 struct IdentifiableState<ID: Hashable, State: Equatable>: Equatable, Identifiable {
     let id: ID

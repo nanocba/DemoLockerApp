@@ -3,6 +3,8 @@ import OrderedCollections
 import SwiftUI
 
 extension ForEachStore {
+    /// This initializer offers a specialized signature when ``EachState`` is ``IdentifiableState`` type, allowing to pass over a closure that takes a
+    /// store of the ``IdentifiableState.State`` instead of the identifiable state per se removing the need to `scope` down in the views.
     init<State, EachContent>(
         _ store: Store<IdentifiedArray<ID, EachState>, (ID, EachAction)>,
         @ViewBuilder content: @escaping (Store<State, EachAction>) -> EachContent
