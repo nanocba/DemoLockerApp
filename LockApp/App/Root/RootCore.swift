@@ -17,6 +17,8 @@ enum RootAction: Equatable {
     case resetCounterDetail
     case activateLock
     case resetLock
+    case onAppear
+    case setRandomCounter(Int)
 }
 
 // MARK: - Reducer
@@ -32,8 +34,16 @@ let rootReducer: Reducer<RootState, RootAction, RootEnvironment> = .combine(
         action: /RootAction.lockView,
         environment: \.lock
     ),
-    Reducer { state, action, _ in
+    Reducer { state, action, environment in
         switch action {
+        case .onAppear:
+            return environment.randomInts()
+                .map(RootAction.setRandomCounter)
+
+        case .setRandomCounter(let value):
+            state.counter = value
+            return .none
+
         case .activateCounterDetail:
             state.counterDetail = .init(value: state.counter)
             return .none
@@ -65,6 +75,7 @@ let rootReducer: Reducer<RootState, RootAction, RootEnvironment> = .combine(
 
 struct RootEnvironment {
     var counter: CounterEnvironment
+    var randomInts: RandomGenerator.GenerateInts
 }
 
 // MARK: - Children environment derivations
