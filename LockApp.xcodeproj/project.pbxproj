@@ -32,6 +32,8 @@
 		FA91EECA2881063100423F1F /* ForEachStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEC92881063100423F1F /* ForEachStore.swift */; };
 		FA91EEDB2881838000423F1F /* CounterClientLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EED92881838000423F1F /* CounterClientLive.swift */; };
 		FA91EEDC2881838000423F1F /* CounterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EEDA2881838000423F1F /* CounterClient.swift */; };
+		FAFCD1D628885B95009CE0AD /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCD1D528885B94009CE0AD /* RandomGenerator.swift */; };
+		FAFCD1D828885BF0009CE0AD /* RandomGeneratorLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCD1D728885BF0009CE0AD /* RandomGeneratorLive.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		FA91EEC92881063100423F1F /* ForEachStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachStore.swift; sourceTree = "<group>"; };
 		FA91EED92881838000423F1F /* CounterClientLive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterClientLive.swift; sourceTree = "<group>"; };
 		FA91EEDA2881838000423F1F /* CounterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterClient.swift; sourceTree = "<group>"; };
+		FAFCD1D528885B94009CE0AD /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
+		FAFCD1D728885BF0009CE0AD /* RandomGeneratorLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGeneratorLive.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +258,7 @@
 		FA91EED72881834900423F1F /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				FAFCD1D428885B85009CE0AD /* RandomGenerator */,
 				FA91EED82881837000423F1F /* CounterClient */,
 			);
 			path = Environment;
@@ -266,6 +271,15 @@
 				FA91EED92881838000423F1F /* CounterClientLive.swift */,
 			);
 			path = CounterClient;
+			sourceTree = "<group>";
+		};
+		FAFCD1D428885B85009CE0AD /* RandomGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCD1D528885B94009CE0AD /* RandomGenerator.swift */,
+				FAFCD1D728885BF0009CE0AD /* RandomGeneratorLive.swift */,
+			);
+			path = RandomGenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +430,7 @@
 				FA91EEBA2880AFB900423F1F /* Store.swift in Sources */,
 				FA91EEA92880A64600423F1F /* RootView.swift in Sources */,
 				FA91EEA72880A34700423F1F /* CounterDetailCore.swift in Sources */,
+				FAFCD1D628885B95009CE0AD /* RandomGenerator.swift in Sources */,
 				FA91EEC62880E7C000423F1F /* Reducer.swift in Sources */,
 				FA91EEC02880B7D700423F1F /* LockView.swift in Sources */,
 				FA91EEA52880A30000423F1F /* RootCore.swift in Sources */,
@@ -423,6 +438,7 @@
 				FA91EEB72880AA5B00423F1F /* AppEnvironmentLive.swift in Sources */,
 				FA91EEC82880ED2500423F1F /* View.swift in Sources */,
 				FA91EEAF2880A7A900423F1F /* CounterView.swift in Sources */,
+				FAFCD1D828885BF0009CE0AD /* RandomGeneratorLive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

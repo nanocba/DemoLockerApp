@@ -29,6 +29,7 @@ struct RootView: View {
                 Button("Go to Lock", action: { viewStore.send(.setLockActive(true)) })
                     .padding(.top, 50)
             }
+            .onAppear { viewStore.send(.onAppear) }
             .sheet(
                 isPresented: viewStore.binding(
                     get: \.lockActive,
@@ -56,6 +57,7 @@ extension RootView {
     enum ViewAction: Equatable {
         case setCounterDetailActive(Bool)
         case setLockActive(Bool)
+        case onAppear
     }
 }
 
@@ -80,6 +82,8 @@ extension RootAction {
             return .activateLock
         case .setLockActive(false):
             return .resetLock
+        case .onAppear:
+            return .onAppear
         }
     }
 }

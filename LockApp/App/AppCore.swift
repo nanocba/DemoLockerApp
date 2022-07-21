@@ -26,6 +26,7 @@ let appReducer: Reducer<AppState, AppAction, AppEnvironment> = .combine(
 
 struct AppEnvironment {
     var counterClient: CounterClient.Interface
+    var randomGenerator: RandomGenerator.Interface
 }
 
 // MARK: - Children environment derivations
@@ -35,8 +36,8 @@ extension AppEnvironment {
         .init(
             counter: .init(
                 increment: counterClient.increment,
-                decrement: counterClient.decrement
-            )
+                decrement: counterClient.decrement),
+            randomInts: randomGenerator.generateInts
         )
     }
 }
